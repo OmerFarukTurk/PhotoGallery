@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500&family=Kalam&family=Pangolin&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+}
+
+.container {
+    display: flex;
+
+}
+
+.header-wrapper {
+    width: 15%;
+    height: 100vh;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Pangolin', cursive;
+    position: fixed;
+    
+    
+    
+}
+
+
+
+.logo{
+    
+    height: 20vh;
+    
+    
+}
+.logo > img {
+    max-width: 100%;
+    padding: 4% 4%;
+    
+}
+
+.navbar{
+    
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    
+}
+
+.nav-item {
+
+    list-style: none;
+    height: 5vh;
+    
+}
+
+.nav-item > a{
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    
+}
+#home > a{
+
+    color: white;
+    
+}
+
+.nav-item > a:hover{
+
+    color: white;
+    
+}
+
+
+.social-media {
+    height: 20vh;
+    
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.social-item {
+    font-size: 40px;
+    list-style: none;
+    color: rgb(23, 23, 49);
+}
+
+.contact {
+    text-align: center;
+    padding: 30px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.gallery-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 15%;
+   
+}
+.gallery {
+    margin: auto;
+    padding: 2px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 25%;
+    text-align: center;
+    border: 5px solid white;
+
+    
+  }
+  
+.image{
+    box-shadow: 2px 2px 2px gray;
+    height: 30vh;
+    
+}
+  
+.image img {
+    width: 100%;
+    height: 30vh;
+    
+  }
+

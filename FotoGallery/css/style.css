@@ -1,0 +1,229 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500&family=Kalam&family=Pangolin&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: darkslategray;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    
+}
+.container {
+    margin : 0 8%;
+    
+}
+
+/* .header-wrapper-empty{
+    width: 100%;
+    height: 8vh;
+    z-index: -1;
+} */
+.header-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+    font-family: 'Pangolin', cursive;
+}
+
+header{
+    margin: auto;
+    
+    width: 20%;
+    opacity: 1;
+    user-select: none;   
+}
+.logo {
+    margin: 10px 0;
+}
+.logo > img{
+    width: 150px;
+    height: 7vh;
+    
+}
+
+.navbar {
+   display: block;
+   width: 70%;
+ 
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 30px;
+    height: 8vh;
+    user-select: none;
+    
+    
+    
+}
+.nav-item {
+    text-align: center;
+    align-self: center;
+    display: block;
+    
+    width: 20%;
+}
+.nav-item a {
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    
+}
+.nav-item a:hover {
+
+    color: white;
+    transition: 0.5s ease;
+}
+
+.slider-wrapper{
+    position: relative;
+
+}
+.button {
+
+    
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    
+}
+#leftButton {
+    left: 40px;
+    z-index: 2;
+  }
+
+#rightButton{
+    right: 40px;
+    z-index: 2;
+  }
+.slider{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.slider-item {
+    list-style-type: none;
+}
+
+.fullscreen-video{
+    position: absolute;
+    z-index: -1;
+    scroll-snap-align: start;
+    list-style: none;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+    background-image: url("https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+}
+
+
+.content{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    
+}
+
+.content-header {
+    height: 30vh;
+    width: 100%;
+    user-select: none;
+    
+    
+}
+
+.content-header > p {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 20vh ;
+
+
+}
+
+
+.content-description {
+    height: 30vh;
+    width: 100%;
+    
+    user-select: none;
+}
+.content-description > p{
+    width: 60%;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 800;
+    margin: auto;
+    margin-top: 7vh;
+    line-height: 50px;
+}
+.content-button {
+    height: 30vh;
+    width: 100%;
+    
+    user-select: none;
+}    
+.content-button > button {
+    width: 15%;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Edu SA Beginner', cursive;
+    font-weight: 800;
+    margin: auto;
+    border-radius: 0;
+    background-color: rgb(198, 208, 209);
+    opacity: 0.5;
+    margin-top: 3vh;
+    height: 50px;
+    border: none;
+}
+
+.content-button > button:hover {
+
+        opacity: 1;
+        cursor: pointer;
+}
+
+
